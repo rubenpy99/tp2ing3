@@ -1,0 +1,368 @@
+
+h1 {
+  margin-top: 40px;
+  text-align:center;
+  font-size:13px;
+  color:#7843e6;
+}
+#menu {
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+  background-color: #e0dede;
+}
+.menuHeading {
+  padding-right: 5px;
+}
+@media all and (max-width: 300px) {
+  #menu {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+.logo {
+  flex: 1;
+  padding-left: 15px;
+}
+@media all and (max-width: 500px) {
+  .logo {
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+  }
+}
+.menuToggleButton {
+  display: none;
+  border-bottom: #333;
+}
+@media all and (max-width: 500px) {
+  .menuToggleButton {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .menuToggleButton:hover {
+    cursor: pointer;
+  }
+}
+.navbar {
+  display: flex;
+  flex: 3;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbarTwo {
+  display: none;
+}
+@media all and (max-width: 900px) {
+  .navbar {
+    justify-content: center;
+  }
+}
+@media all and (max-width: 500px) {
+  .navbar {
+    display: none;
+  }
+  .navbarTwo {
+    list-style: none;
+    width: 100%;
+  }
+  .item {
+    align-self: center;
+    border: 2px solid blue;
+    flex: 1;
+    font-size: 20px;
+    padding: 10px 10px;
+  }
+}
+.item {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px 10px;
+}
+@media all and (max-width: 900px) {
+  .item {
+    padding: 5px 5px;
+  }
+}
+a {
+  text-decoration: none;
+  color: #7843e6;
+  font-size: 32px;
+}
+
+li {
+  color: #7843e6;
+  font-size: 32px;
+  text-align: center;
+}
+@media all and (max-width: 900px) {
+  a {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 600px) {
+  a {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 500px) {
+  .menuToggleItem {
+    margin: 7px 0px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+* {
+  font-family: calibri;
+}
+
+.avatar {
+  border-radius: 100px;
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+.message {
+  position: relative;
+  clear: both;
+  width: 1200 px;
+}
+.message .avatar {
+  margin-top: 5px;
+}
+.message p {
+  /* float: left; */
+  font-family: calibri;
+  color: #333;
+  /* width: 1200 px; */
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  word-spacing: 3px;
+  line-height: 22px;
+}
+.message p em.info {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #666 px;
+}
+.message p strong {
+  display: block;
+  color: #428bca;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+.message p strong em {
+  font-weight: normal;
+  color: #333;
+  font-size: 10pt;
+}
+.message .triangle {
+  display: block;
+  position: absolute;
+  left: 85px;
+  top: 25px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #eeeeee transparent transparent;
+}
+
+.inverse .avatar {
+  float: right;
+}
+.inverse p {
+  float: none;
+  background-color: #eee;
+}
+.inverse .triangle {
+  display: block;
+  position: absolute;
+  left: 490px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #eeeeee;
+}
+
+#global {
+  width: 1140px;
+}
+/* .messages {
+  float: left;
+} */
+.postform {
+  display: block;
+  width: 518px;
+  float: right;
+  padding-left: 18px;
+  border-left: 2px solid #eee;
+}
+.postform form label {
+  display: block;
+}
+.postform form label textarea {
+  width: 1140 px;
+  height: 300 px;
+  border-radius: 10px;
+  background-color: #efefef;
+  border: 0;
+  padding: 10px;
+  font-size: 12pt;
+  color: #333;
+  font-style: italic;
+}
+.postform form div.headform {
+  padding-bottom: 10px;
+  color: #666;
+}
+.postform form div.headform strong {
+  display: block;
+  font-size: 14pt;
+  color: #428bca;
+  padding-bottom: 10px;
+}
+.postform form div.headform strong span {
+  color: #333;
+}
+.postform form .submit {
+  display: block;
+  width: 200px;
+  height: 30px;
+  background-color: #428bca;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  margin-right: 18px;
+}
+.postform a {
+  color: #428bca;
+}
+
+@media screen and (max-width: 1140px) {
+  #global {
+    width: 100%;
+  }
+  .message {
+    float: none;
+    margin: auto;
+  }
+  .messages {
+    float: none;
+    margin: auto;
+  }
+  .postform {
+    float: none;
+    height: 275px;
+    margin: auto;
+    border: 0;
+  }
+  .postform form label textarea {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 620px) {
+  body {
+    margin-right: 60px;
+  }
+  .message .avatar,
+  .inverse .avatar,
+  .message .triangle,
+  .inverse .triangle {
+    display: none;
+  }
+  .postform,
+  .postform form label textarea,
+  .message,
+  .message p {
+    width: 100%;
+  }
+  .postform {
+    height: initial;
+  }
+  .postform form .submit {
+    margin: auto;
+    margin: 10px 0;
+  }
+}
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+h1 {
+  margin-top: 80px;
+  text-align:center;
+  font-size:13px;
+  color:#7843e6;
+}
